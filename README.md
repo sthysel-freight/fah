@@ -1,6 +1,11 @@
-# Folding @home docker containers
+# Folding@home docker containers
 
 This repo provides docker containers to run the folding@home client. 
+
+So this is one way of getting Folding@Home done. It has all the usual benefits
+of Docker containerization. Assuming you are already a docker user the install
+should take a few minutes, most of which is building the containers. Perhaps
+I'll push this to dockerhub later, idk.
 
 # Install
 
@@ -39,11 +44,10 @@ Thu Apr 16 11:14:52 2020
 +-----------------------------------------------------------------------------+
 ```
  
+# Run
 
-## Build the containers
-
-Clone this repo:
-
+So docker-compose does not support the --gpus flag at this time, so you have to
+slum it with the `run-gpu.sh script`
 
 # Resources
 
