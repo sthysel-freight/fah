@@ -1,0 +1,20 @@
+---
+version: "3"
+
+services:
+  fah-gpu:
+    build:
+      context: ./gpu/
+      args:
+        FAH_VERSION: "v7.5"
+    environment:
+      - USER=sthysel
+      - TEAM=248479
+      - ENABLE_GPU=true
+      - ENABLE_SMP=true
+      - PASSKEY=${FAH_PASSKEY}
+      - POWER=full
+    ports:
+      - 7396:7396
+      - 36330:36330
+    restart: unless-stopped
