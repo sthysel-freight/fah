@@ -9,7 +9,7 @@ I'll push this to dockerhub later, idk.
 
 # Install
 
-## Prepare the docker environment 
+## Prepare the docker environment if you have a Nvidia GPU
 
 Be sure `docker` 19.03 or higher as well as the `nvidia-container-toolkit` is
 installed. If docker is already installed be sure to restart docker after
