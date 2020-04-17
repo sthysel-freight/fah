@@ -24,6 +24,8 @@ $ yay -S docker nvidia-container-toolkit
 $ sudo systemctl restart docker
 ```
 
+Ubuntu or whatever will be very similar.
+
 Once this is done run the `test-gpu.sh` script to verify your GPU's are available:
 
 ``` zsh
