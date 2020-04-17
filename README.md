@@ -53,6 +53,10 @@ Thu Apr 16 11:14:52 2020
 So docker-compose does not support the --gpus flag at this time, so you have to
 slum it with the `run-gpu.sh` script.
 
+```zsh
+$ run-gpu -u sthysel -t 248479
+```
+
 If you have FAH passkey make sure its in your environment called `FAH_PASSKEY`
 
 # Resources
