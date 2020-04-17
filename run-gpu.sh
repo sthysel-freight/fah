@@ -12,13 +12,16 @@ do
   esac
 done
 
-USER=
-
 IMAGE_NAME=fah-gpu
 CONTAINER_NAME=fah-gpu
 
+# make sure the image is built
 docker build ./gpu/ -t ${IMAGE_NAME}
 
+# clean up previous container, if any
+docker stop ${CONTAINER_NAME} && docker rm ${CONTAINER_NAME}
+
+# start a container named ${CONTAINER_NAME}
 docker run -d \
        --name ${CONTAINER_NAME} \
        --gpus all \

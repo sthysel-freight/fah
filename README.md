@@ -1,5 +1,7 @@
 # Folding@home docker containers
 
+![No Magic](pics/dontbelieveinmagic.jpg)
+
 This repo provides docker containers to run the folding@home client. 
 
 So this is one way of getting Folding@Home done. It has all the usual benefits
@@ -47,7 +49,9 @@ Thu Apr 16 11:14:52 2020
 # Run
 
 So docker-compose does not support the --gpus flag at this time, so you have to
-slum it with the `run-gpu.sh script`
+slum it with the `run-gpu.sh` script.
+
+If you have FAH passkey make sure its in your environment called `FAH_PASSKEY`
 
 # Resources
 
