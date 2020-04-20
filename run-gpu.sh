@@ -3,7 +3,7 @@
 USER=sthysel
 TEAM=248479
 
-while getopts ":u:t:" opt
+while getopts ":u:t:g" opt
 do
   case $opt in
       u) USER="$OPTARG" ;;
@@ -29,7 +29,7 @@ docker run -d \
        -e TEAM=${TEAM} \
        -e PASSKEY=${FAH_PASSKEY} \
        -e ENABLE_GPU=true \
-       -e ENABLE_SMP=true \
+       -e ENABLE_SMP=false \
        --restart unless-stopped \
        ${IMAGE_NAME} \
        --allow 0/0 --web-allow 0/0

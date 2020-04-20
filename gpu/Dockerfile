@@ -32,8 +32,8 @@ RUN chmod +x /opt/fahclient/entrypoint.sh
 
 ENV USER "Anonymous"
 ENV TEAM "0"
-ENV ENABLE_GPU "false"
-ENV ENABLE_SMP "true"
+ENV ENABLE_GPU "true"
+ENV ENABLE_SMP "false"
 ENV POWER "full"
 
 USER folding
